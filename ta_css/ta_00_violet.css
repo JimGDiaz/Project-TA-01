@@ -1,0 +1,159 @@
+@font-face {
+    font-family: "TA-avantg_med";
+    src: url("../ta_fonts/AVGARDM.TTF");
+}
+
+@font-face {
+    font-family: "TA-futur_med";
+    src: url("../ta_fonts/futr.TTF");
+}
+
+@font-face {
+    font-family: "TA-micro_med";
+    src: url("../ta_fonts/m025094d.ttf");
+}
+
+@font-face {
+    font-family: "TA-swiss_blk";
+    src: url("../ta_fonts/swissko.ttf");
+}
+
+
+.main-header{
+    margin: 0.1em;
+    border: 4.5px double blue;
+    border-radius: 1em;
+    background-image: linear-gradient(45deg, rgb(80, 4, 80), darkmagenta,blueviolet, violet);
+    background-size: cover;
+    background-clip: padding-box;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-header__title{
+    width: 78vw;
+    /* height: 12vh; */
+    margin-left: 0.25em; /* 12px*/
+    margin-top: 0.10em;
+    margin-bottom: 0.10em;
+    border: 3px double gold;
+    border-radius: 0.25em;
+
+    background-image: linear-gradient(45deg, wheat, peachpuff, blueviolet, purple);
+    background-size: cover;
+    background-clip: padding-box;
+
+    /* background-color: rgb(96, 192, 205); */
+    
+    color: hsla(240, 63%, 39%, 1 );
+    font-family: TA-micro_med, 'Times New Roman', Times, serif;
+    font-size: 3.0rem; /* 3px x 16 = 48px Valor Base*/
+    font-style: italic;
+    
+    text-shadow: 6px 6px 2.4px rgb(92, 128, 240);
+    letter-spacing: 12px;
+}
+
+.main-header__title:hover{
+
+    color:purple;
+    background-image: linear-gradient(45deg, powderblue, cyan, blue, navy);
+
+}
+
+.main-header__subtitle{
+    display: block;
+    width: 78vw;
+    height: 3.6vh;
+    margin-left: 0.75em; /* 16 x 0.75 = 12px */
+    margin-top: 0.2em;
+    padding-top: 0.25em;
+    border: 3px double gold;
+    border-radius: 0.50em;
+
+    background-image: linear-gradient(45deg, wheat, peachpuff, blueviolet, purple);
+    background-size: cover;
+    background-clip: padding-box;
+    
+    color: navy;
+    font-family: TA-micro_med, 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: bold;
+
+    text-align: center;
+    letter-spacing: 3.6px;   
+
+}
+
+.main-header__subtitle:hover{
+
+    color:purple;
+    background-image: linear-gradient(45deg, powderblue, cyan, blue, navy);
+
+}
+
+.main-header__image{
+    width: 15vw;
+    height: 15vh;
+    margin: 0.25em;
+    padding: 1em;
+    border: 1px double gold;
+    border-radius: 1em;
+
+    background-image: linear-gradient(45deg, wheat 39%, blueviolet, purple);
+    background-size: cover;
+    background-clip: padding-box;
+
+    display: block;
+
+}
+
+
+.main-menu{
+    width: 100%;
+    height: 9vh;
+    padding: 1px;
+    background-color: rgb(15, 164, 190);
+}
+
+.main-menu__list{
+    height: 5vh;
+    list-style-type: circle;
+    margin: 0.5em; 
+    padding-top: 4.50px;
+    
+    background-color: hsla(270, 100%, 50%, 0.75);
+
+    color: rgb(0, 250, 154);
+    font-family: TA-avantg_med, 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    font-style: italic;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-menu__item{
+    display: inline-block;
+    width: 9em;
+    background-color: hsla(255, 30%, 30%, 0.75);
+    text-align: center;
+}
+
+
+
+.main-header__div{
+    
+    width: 63%;
+    height: 54vh; 
+    /* background-color: salmon; */
+    background-image: url("../ta_logos/TA_Logo.png");
+    background-size: contain;
+    background-repeat: space;
+    background-color: hsla(255, 100%, 50%, 0.15);
+    
+}

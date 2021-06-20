@@ -1,0 +1,252 @@
+@font-face {
+    font-family: "TA-avantg_med";
+    src: url("../ta_fonts/AVGARDN.TTF");
+}
+
+@font-face {
+    font-family: "TA-futur_med";
+    src: url("../ta_fonts/futr.TTF");
+}
+
+@font-face {
+    font-family: "TA-micro_med";
+    src: url("../ta_fonts/m025094d.ttf");
+}
+
+@font-face {
+    font-family: "TA-swiss_blk";
+    src: url("../ta_fonts/swissko.ttf");
+}
+
+
+.main-header{
+    margin: 0.1em;
+    border: 4.5px double blue;
+    border-radius: 1em;
+    background-image: linear-gradient(45deg, indigo, navy, blue, blueviolet);
+    background-size: cover;
+    background-clip: padding-box;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-header__title{
+    width: 78vw;
+    /* height: 13vh; */
+    margin: 0.05em 0.10em 0.20em;
+    /* margin-left: 0.25em; /* 12px*/
+    /* margin-right: 0.25em; */
+    /* margin-top: 0.15em; */
+    /* margin-bottom: 0.15em; */ 
+    border: 3px double gold;
+    border-radius: 0.25em;
+
+    background-image: linear-gradient(45deg, wheat, peachpuff, blueviolet);
+    background-size: cover;
+    background-clip: padding-box;
+
+    /* background-color: rgb(96, 192, 205); */
+    
+    color: hsla(240, 63%, 39%, 1 );
+    font-family: TA-micro_med, 'Times New Roman', Times, serif;
+    font-size: 3.0rem; /* 3px x 16 = 48px Valor Base*/
+    font-style: italic;
+    text-align: center;
+    text-shadow: 6px 6px 2.4px rgb(92, 128, 240);
+    letter-spacing: 12px;
+}
+
+.main-header__title:hover{
+
+    color:indigo;
+    background-image: linear-gradient(45deg, powderblue, cyan, blue, navy);
+
+}
+
+.main-header__subtitle{
+    display: block;
+    width: 78vw;
+    height: 3.6vh;
+    margin-left: 0.40em; /* 16 x 0.40 = 6.4px */
+    /* margin-bottom: 0.0em; */
+    padding-top: 0.25em;
+    border: 3px double gold;
+    border-radius: 0.50em;
+
+    background-image: linear-gradient(45deg, wheat, peachpuff, blueviolet);
+    background-size: cover;
+    background-clip: padding-box;
+    
+    color: navy;
+    font-family: TA-micro_med, 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: bold;
+
+    text-align: center;
+    letter-spacing: 3.6px;   
+
+}
+
+.main-header__subtitle:hover{
+
+    color:purple;
+    background-image: linear-gradient(45deg, powderblue, cyan, blue, navy);
+
+}
+
+.main-header__image{
+    width: 15vw;
+    height: 15vh;
+    margin: 0.25em 0.20em;
+    padding: 1em;
+    border: 3px double gold;
+    border-radius: 1em;
+
+    background-image: linear-gradient(45deg, wheat, peachpuff, blueviolet, purple);
+    background-size: cover;
+    background-clip: padding-box;
+
+    display: block;
+
+}
+
+
+.main-menu{
+    width: 100%;
+    height: 8vh;
+    padding: 0.10px 0.20px;
+    background-color: rgb(15, 164, 190);
+}
+
+.main-menu__list{
+    height: 5vh;
+    list-style-type: circle;
+    margin: 0.5em; 
+    padding-top: 4.50px;
+    
+    background-color: hsla(270, 100%, 50%, 0.75);
+
+    color: rgb(0, 250, 154);
+    font-family: TA-avantg_med, 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    font-style: italic;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main-menu__item{
+    display: inline-block;
+    width: 9em;
+    background-color: hsla(255, 30%, 30%, 0.75);
+    text-align: center;
+
+}
+
+/* .main-header__div{ */
+    
+    /* width: 63%; */
+    /* height: 54vh;  */
+    /* background-color: salmon; */
+    /* background-image: url("../ta_logos/TA_Logo.png"); */
+    /* background-size: contain; */
+    /* background-repeat: space; */
+    /* background-color: hsla(255, 100%, 50%, 0.15); */
+    
+/* } */
+
+.main-slider{  /* BLOQUE div */
+    width: 99.5%;
+    padding: 0%;
+    overflow: hidden;
+    border: 3px double blue;
+}
+
+.main-slider ul{
+    width: 400%;
+    padding: 0;
+    margin: 0;
+    background-color: moccasin;
+
+    display: flex;
+    justify-content: space-around;
+
+    animation: dynamic_change 20s infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+
+    /* animation: cambio_dinámico 20s infinite alternate linear; */
+}
+
+.main-slider li{
+    width: 63vw;
+    height: 45vw;
+    /* padding: 3vw 5vw; */
+    /* padding-right: auto; */
+    list-style: none;
+    border:3px double gold;
+    background-color: hsla(240, 100%, 24%, 0.75);
+}
+
+.main-slider__img{
+    display: block;
+    width: 93%;
+    height: 75%;
+    margin: auto;
+    margin-top: 1.5vw;
+    margin-bottom: 1.5vw;
+
+    box-shadow: 9px 6px 3px blue;
+    /* border: 3px double purple; */
+}
+
+.main-slider__title{
+    overflow: hidden;
+    width: 93%;
+    height: 15%;
+    /* margin-right: 24vw; */
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0;
+    border: 1px solid purple;
+    background-color: wheat;
+    background-size: 75vw;
+
+    color: darkblue;
+    font-family: TA-avantg_med, 'Times New Roman', Times, serif;
+    font-size: 0.9rem; /* 3px x 16 = 48px Valor Base*/
+    font-style: italic;
+    text-align: center;
+    box-shadow: 9px 6px 3px blue;
+}
+
+.main-slider__title, h2{
+    margin-top: 4.5px;
+    margin-bottom: 0px; 
+}
+
+.main-slider__title, h3{
+    margin-top: 1.5px;
+    margin-bottom: 0px; 
+}
+
+/* Paradas */
+@keyframes dynamic_change{
+0% {margin-left:0; }
+20% {margin-left:0; }
+/* 20% = 0.2 x 20 = 4 segundos; tiempo de una imagen
+   5% = 0.05 x 20 = 1 segundo, tiempo entre imágenes  */
+25% {margin-left: -100%; }
+45% {margin-left: -100%; }
+
+50% {margin-left: -200%; }
+70% {margin-left: -200%; }
+
+75% {margin-left: -300%; }
+100% {margin-left: -300%; }
+
+}
